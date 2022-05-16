@@ -14,7 +14,7 @@ def index():
 def upload():
     # receive the file from the client
     file = request.files['file']
-    filepath = f'static/temp/{file.filename}'
+    filepath = f"static/temp/{file.filename}"
     file.save(filepath) # save to directory
     
     # return server url to client
